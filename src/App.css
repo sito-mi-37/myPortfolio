@@ -1,0 +1,85 @@
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Cutive Mono', monospace; */
+
+
+/* variables */
+:root{
+
+
+  /* color */
+  --danger: #fb6f78;
+  --warm: #f4c152;
+  --aspect: #828df8;
+
+  /* dark theme */
+  --primary: #b3c5ef;
+  --secondary: #3abff8;
+  --bg: #0f1729;
+  --btn-text: #002b3d;
+
+  /* light theme */
+  --primary-light: #394e6a;
+  --secondary-light: #057aff;
+  --bg-light: #f0f6ff;
+  --btn-text-light: #c6dfff;
+
+
+  /* fonts */
+
+  --font1: 'Roboto', sans-serif;
+  --font2: 'Cutive Mono', monospace; 
+
+  /*  */
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+} */
+
+/* reset */
+
+body,p,a,ul,li{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+
+}
+
+
+
+/* base styles */
+body{
+  background: var(--bg);
+  font-family: var(--font1);
+  color: var(--primary);
+  font-size: 16px;
+}
+
+
+/* fonts */
+
+
+
+
+/* mobile styles */
+
+/* small tablet styles */
+@media screen and (min-width: 620px){
+
+}
+
+/* large tablets and laptop styles */
+@media screen and (min-width: 960px){
+  
+}
+
+
+/* desktop styles */
+@media screen and (min-width: 1200px){
+  
+}

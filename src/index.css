@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base{
+    html{
+        font-family: Roboto;
+    }
+} */
+
+.navlink{
+    @apply px-2 py-1 hover:bg-secondryDark hover:text-buttonDark rounded
+}
