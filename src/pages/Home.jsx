@@ -15,7 +15,7 @@ const Home = () => {
     <div className="home px-5 grid grid-cols-1  justify-items-center">
       <div className="container py-9 grid grid-cols-1 md:grid-cols-2  items-center justify-items-center gap-3">
         <div className="md:border-r border-[#716f6f] flex flex-col justify-center md:justify-self-end lg:p-5 items-center">
-          <div className="profile--pic h-[200px] w-[200px] border rounded-full overflow-hidden outline outline-secondryDark outline-offset-4 outline-2 ">
+          <div className="profile--pic h-[200px] w-[200px] border rounded-full overflow-hidden outline outline-secondryDark outline-offset-4 outline-2 outline-rounded-full ">
             <img className="h-full w-full object-cover" src="gunz.jpg" alt="" />
           </div>
           <div className=" p-5 text-center ">
