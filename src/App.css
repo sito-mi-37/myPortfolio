@@ -61,25 +61,17 @@ body{
 }
 
 
-/* fonts */
-
-
-
-
-/* mobile styles */
-
-/* small tablet styles */
-@media screen and (min-width: 620px){
-
+.skill{
+  padding: 10px 16px;
+  cursor: pointer;
+  user-select: none;
+  background: rgba(255,255,255, 0.05);
+  box-shadow: rgb(0 0 0 /15%) 0px 8px 32px;
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.2s ease-in-out 0s;
 }
-
-/* large tablets and laptop styles */
-@media screen and (min-width: 960px){
-  
-}
-
-
-/* desktop styles */
-@media screen and (min-width: 1200px){
-  
+.skill:hover{
+  background: rgba(255,255,255, 0.2);
 }

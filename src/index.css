@@ -9,5 +9,5 @@
 } */
 
 .navlink{
-    @apply px-2 py-1 hover:bg-secondryDark hover:text-buttonDark rounded
+    @apply px-2 py-1 hover:bg-secondaryDark hover:text-buttonDark rounded
 }

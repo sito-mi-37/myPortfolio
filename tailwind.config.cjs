@@ -14,7 +14,7 @@ module.exports = {
         bgLight: "#f0f6ff",
         buttonLight: "#c6dfff",
         primaryDark: "#b3c5ef",
-        secondryDark: "#3abff8",
+        secondaryDark: "#3abff8",
         bgDark: "#0f1729",
         buttonDark: "#002b3d",
         danger: "#fb6f78",

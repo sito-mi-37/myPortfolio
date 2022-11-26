@@ -7,14 +7,14 @@ const Nav = () => {
   const [dark, setDark] = useState(false)
 
     return (
-      <div className=' grid grid-cols-2 lg:grid-cols-3 py-4 px-3 lg:py-1 lg:px-14 items-center '>
+      <div className=' grid grid-cols-2 lg:grid-cols-4 py-4 px-3 lg:py-1 lg:px-14 items-center bg-gray-900  '>
           <div className="logo__container absolute  right-[45%] lg:static">
             <h3 className="logo text-3xl font-bold  ">Sito<span className="text-green-700 text-4xl">.</span></h3>
           </div>
           <div className="text-3xl lg:hidden">
             <HiMenu className='border rounded drop-shadow-md' />
           </div>
-          <div className="hidden lg:block">
+          <div className="hidden lg:block col-span-2 justify-self-center">
             <ul className='flex gap-4 text-lg font-medium'>
               <li className='navlink'><a href="/">Home</a></li>
               <li className='navlink'><a href="/about">About</a></li>
