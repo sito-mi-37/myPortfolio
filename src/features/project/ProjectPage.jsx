@@ -26,7 +26,7 @@ const ProjectPage = () => {
         navigate("/jefe/projects");
       
     }catch(err){
-      console.log(err)
+      // console.log(err)
     }
     
   };

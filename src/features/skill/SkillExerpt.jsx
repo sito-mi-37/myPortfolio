@@ -5,7 +5,7 @@ import { useDeleteSkillMutation } from "../skillApiSlice";
 const SkillExerpt = ({skill}) => {
 
   const [deleteSkill] = useDeleteSkillMutation()
-console.log(skill)
+// console.log(skill)
   return (
     <li className="flex justify-between p-2 border w-[14rem] rounded-xl bg-white/5 backdrop-blur-2xl ">
       <div className="w-[6rem] h-[7rem]   overflow-hidden">

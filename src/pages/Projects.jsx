@@ -14,7 +14,7 @@ const Projects = () => {
   })
 
   
-console.log(projects)
+// console.log(projects)
 
   let content;
   if (!projects?.length) {

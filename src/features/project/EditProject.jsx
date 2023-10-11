@@ -65,7 +65,7 @@ const EditProject = () => {
       .catch((err) => {
         setUploadError(true);
         setUploading(false);
-        console.log(err);
+        // console.log(err);
       });
   };
 
@@ -93,7 +93,7 @@ const EditProject = () => {
       const fileURL = await uploadToCloudinary(file);
       setUploading(false);
       setImageUrl(fileURL);
-      console.log(imageUrl);
+      // console.log(imageUrl);
     }
   };
 
@@ -116,7 +116,7 @@ const EditProject = () => {
     if (canSave) {
       try {
         const res = await updateProject(payload);
-      console.log(res);
+      // console.log(res);
       setTitle("");
       setDescription("");
       setStacks([{ stack: "" }]);

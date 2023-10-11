@@ -30,7 +30,7 @@ const useCloudinaryUpload = () => {
           })
           .then((response) => {
             const data = response.data
-            console.log(data)
+            // console.log(data)
             const fileURL = data.secure_url
             setProgress(100)
             return fileURL
@@ -38,7 +38,7 @@ const useCloudinaryUpload = () => {
           .catch(err => {
             setUploadError(true)
             setUploading(false)
-            console.log(err)
+            // console.log(err)
     
           })
       };

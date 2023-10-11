@@ -41,7 +41,7 @@ const Login = () => {
             
             navigate('/jefe')
         } catch (err) {
-            console.log(err)
+            // console.log(err)
             if(!err?.status){
                 setErrMsg('No server response')
             }else if(err.originalStatus === 400){

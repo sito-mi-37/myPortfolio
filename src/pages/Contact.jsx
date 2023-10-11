@@ -22,7 +22,7 @@ const Contact = () => {
     try {
       const res = await addNewContact(data)
     } catch (err) {
-      console.log(err)
+      // console.log(err)
     }
   };
 

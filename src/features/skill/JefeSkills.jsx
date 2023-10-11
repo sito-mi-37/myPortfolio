@@ -47,7 +47,7 @@ const JefeSkills = () => {
       })
       .then((response) => {
         const data = response.data;
-        console.log(data);
+        // console.log(data);
         const fileURL = data.secure_url;
         setProgress(100);
         return fileURL;
@@ -55,7 +55,7 @@ const JefeSkills = () => {
       .catch((err) => {
         setUploadError(true);
         setUploading(false);
-        console.log(err);
+        // console.log(err);
       });
   };
 
@@ -66,7 +66,7 @@ const JefeSkills = () => {
       const fileURL = await uploadToCloudinary(file);
       setUploading(false);
       setImageUrl(fileURL);
-      console.log(imageUrl);
+      // console.log(imageUrl);
     }
   };
 
@@ -81,7 +81,7 @@ const canSave = [title, imageUrl].every(Boolean)
   const handleSubmit = (e) =>{
     e.preventDefault()
     if(canSave){
-      console.log(payload)
+      // console.log(payload)
       const res = addNewSkill(payload)
       setTitle('')
       setImageUrl('')

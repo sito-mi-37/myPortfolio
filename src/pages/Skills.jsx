@@ -11,7 +11,7 @@ const Skills = () => {
   })
 
  
-  console.log(skills)
+  // console.log(skills)
 
 
   return (
