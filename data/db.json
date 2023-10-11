@@ -1,0 +1,70 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Weather App",
+      "description": "Tells the weather condition of any city of choice",
+      "stacks": [
+        {
+          "stack": "Python"
+        }
+      ],
+      "github": "https://www.github.com/sito/weatherapp",
+      "liveLink": "https://www.github.com/sito/weatherapp",
+      "imageUrl": "../../../gunz.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Bakery Store",
+      "description": "Tells the weather condition of any city of choice",
+      "stacks": [
+        {
+          "stack": "Python"
+        }
+      ],
+      "github": "https://www.github.com/sito/weatherapp",
+      "liveLink": "https://www.github.com/sito/weatherapp",
+      "imageUrl": "https://res.cloudinary.com/dtgfun98t/image/upload/v1696219524/documents/ncqp99jtn1luurw07a78.jpg"
+    },
+    {
+      "id": 3,
+      "title": "School App",
+      "description": "Tells the weather condition of any city of choice",
+      "stacks": [
+        {
+          "stack": "Python"
+        }
+      ],
+      "github": "https://www.github.com/sito/weatherapp",
+      "liveLink": "https://www.github.com/sito/weatherapp",
+      "imageUrl": "../../../gunz.jpg"
+    }
+  ],
+  "skills": [
+    {
+      "id": 2,
+      "title": "nodeJS",
+      "imageUrl": "../../../gunz.jpg"
+    },
+    {
+      "id": 3,
+      "title": "ReactJS",
+      "imageUrl": "../../../gunz.jpg"
+    },
+    {
+      "id": 83,
+      "title": "dark horse",
+      "imageUrl": "https://res.cloudinary.com/dtgfun98t/image/upload/v1696224753/documents/uyemr856tbvtjofa0nih.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Python",
+      "imageUrl": "https://res.cloudinary.com/dtgfun98t/image/upload/v1696231709/documents/bucwelxmsilatju6xb1x.jpg"
+    },
+    {
+      "id": 48,
+      "title": "flask",
+      "imageUrl": "https://res.cloudinary.com/dtgfun98t/image/upload/v1696231821/documents/djup6dvr6hyj9xm6iin8.jpg"
+    }
+  ]
+}

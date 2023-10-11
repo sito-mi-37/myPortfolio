@@ -2,12 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base{
-    html{
-        font-family: Roboto;
-    }
-} */
+@layer base {
+  html {
+    font-family: Roboto;
+  }
+}
+.entry__text {
+  position: relative;
+  font-family: monospace;
+}
 
-.navlink{
-    @apply px-2 py-1 hover:bg-secondaryDark hover:text-buttonDark rounded
+.entry__text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(8, 37, 69);
+  border-left: 2px solid gray;
+  animation: animate 2s steps(12) forwards;
+}
+
+@keyframes animate {
+  40% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.digital__clock{
+display: flex;
+border: 2px solid rgba(0,0,0,0.5);
+padding: 5px 10px;
+border-radius: 12px;
+font-size: 1em;
+font-weight: 600;
+box-shadow: 3px 3px 10px rgba(0,0,0,0.5), inset 2px 2px 10px rgba(255,255,255,0.2), inset -5px -5px 15px rgba(0,0,0,0.75);
+}
+
+.digital__clock p{
+    position: relative;
+    width: 25px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.digital__clock p:nth-child(1)::after,
+.digital__clock p:nth-child(2)::after
+{
+    content: ':';
+    position: absolute;
+    right: -2px;
+}
+
+.digital__clock p:nth-child(2)::after{
+    animation: time 1s steps(1) infinite;
+    
+}
+
+@keyframes time {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+@layer utilities {
+  .toggle-btn {
+    @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg];
+  }
+}
+
+.navlink {
+  @apply px-2 py-1 hover:bg-secondaryDark hover:text-buttonDark rounded;
 }

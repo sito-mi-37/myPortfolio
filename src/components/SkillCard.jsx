@@ -1,10 +1,18 @@
 import React from 'react'
+// import { useGetSkillsQuery } from '../features/skillApiSlice'
 
-const SkillCard = ({src, skillName}) => {
+const SkillCard = ({skill}) => {
+    // const {skill} = useGetSkillsQuery('skillsList', {
+    //   selectFromResult: ({data}) => ({
+    //     skill: data?.entities[skillId]
+    //   })
+    // })
+
+
   return (
-    <div className='skill flex basis-1/3 items-center justify-center flex-col border-primaryDark border-1/2 gap-3 '>
-        <img className='w-16' src={src} alt="skill" />
-        <p>{skillName}</p>
+    <div className='skill flex  items-center justify-center flex-col border-primaryDark gap-3 h-[7rem] '>
+        <img className='w-16' src={skill?.imageUrl} alt="skill" />
+        <p>{skill?.title}</p>
     </div>
   )
 }

@@ -1,27 +1,25 @@
 import React from 'react'
+import ServiceCard from '../components/ServiceCard'
+import { servicesData } from '../data'
 
 const Services = () => {
   return (
-    <div>
-      <h1>My Services</h1>
-      <p>Here are some services that i provide for my clients.</p>
+    <div className="w-11/12 sm:w-4/5 mx-auto grid grid-cols-1 justify-items-center items-center py-7">
+      <h1 className="text-3xl font-bold mb-3">My <span className="text-secondaryDark">Services</span></h1>
+      <p className="text-center text-sm sm:text-lg mt-">Here are some <span className='text-aspect'>services</span>  that I provide for my clients.</p>
       <div>
-        <div>
-          <div>
-            <img src="#" alt="" />
-            <h3>FrontEnd Development</h3>
-            <p>I'm a full stack developer. I can build your user interface from scratch or I can help you update your website.</p>
-          </div>
-          <div>
-            <img src="#" alt="" />
-            <h3>BackEnd Development</h3>
-            <p>I'm a full stack developer. I can build your API from scratch or I can help you update your website.</p>
-          </div>
-          <div>
-            <img src="#" alt="" />
-            <h3>Mobile Development</h3>
-            <p>I'm a mobile developer. I can build your mobile app from scratch or I can help you update your website.</p>
-          </div>
+        <div className='flex flex-wrap -m-4 mt-4 '>
+          {
+            servicesData.map((card, index) => (
+              <ServiceCard 
+              key={index}
+              src={card.src}
+              title={card.title}
+              description={card.description}
+              />
+            ))
+          }
+          
         </div>
       </div>
     </div>

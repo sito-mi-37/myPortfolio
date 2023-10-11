@@ -32,13 +32,7 @@
   /*  */
 }
 
-/* @media (prefers-reduced-motion: no-preference) {
-  :root {
-    scroll-behavior: smooth;
-  }
-} */
 
-/* reset */
 
 body,p,a,ul,li{
   margin: 0;
@@ -74,4 +68,8 @@ body{
 }
 .skill:hover{
   background: rgba(255,255,255, 0.2);
+}
+
+.input::placeholder{
+  color: var(--btn-text)
 }
