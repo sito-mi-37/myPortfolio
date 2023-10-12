@@ -1,12 +1,13 @@
 import React from 'react'
-// import { useGetSkillsQuery } from '../features/skillApiSlice'
+import { useGetSkillsQuery } from '../features/skillApiSlice'
 
-const SkillCard = ({skill}) => {
-    // const {skill} = useGetSkillsQuery('skillsList', {
-    //   selectFromResult: ({data}) => ({
-    //     skill: data?.entities[skillId]
-    //   })
-    // })
+const SkillCard = ({skillId}) => {
+
+    const {skill} = useGetSkillsQuery('skillsList', {
+      selectFromResult: ({data}) => ({
+        skill: data?.entities[skillId]
+      })
+    })
 
 
   return (

@@ -18,7 +18,7 @@ const Nav = () => {
   const location = useLocation();
 
   return (
-    <header className="bg-primary w-full h-[60px] text-white sticky top-0 z-10 bg-violet-800 ">
+    <header className="bg-primary w-full h-[60px] text-white sticky top-0 z-10 bg-violet-800 px-2">
       <section className="max-w-[70rem] mx-auto flex justify-between items-center  p-2">
         <Link to={"/"}>
           <Logo />

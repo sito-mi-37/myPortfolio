@@ -1,33 +1,43 @@
 import React from "react";
-import { HiCode } from "react-icons/hi";
-import { projectsData } from "../data";
 import ProjectCard from "../components/ProjectCard";
 import { useGetProjectsQuery } from "../features/projectApiSlice";
-import Spinner from "../components/Spinner";
+import  DotLoader  from "react-spinners/DotLoader";
 
 const Projects = () => {
 
-  const {projects} = useGetProjectsQuery('projectsList', {
-    selectFromResult: ({data}) => ({
-      projects: data?.ids.map(id => data?.entities[id])
-    })
-  })
+  const { 
+    data: projects,
+    isLoading,
+    isSuccess,
+    isError,
+    error
+  } = useGetProjectsQuery('projectsList')
 
   
 // console.log(projects)
 
   let content;
-  if (!projects?.length) {
-    content = <p>No Projects to display</p>;
-  } else {
+
+  if(isLoading) content = <DotLoader color={"#3abff8"} size={30}/>
+
+  if(isError){
+    content = <p className="text-sm text-red-500">{error?.data?.message}</p>
+  }
+
+  if (isSuccess) {
+    const {ids, entities} = projects
+
     content = (
       <div className="flex flex-wrap justify-around  mt-5 w-full gap-5">
-        {projects?.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
+        {ids.length 
+              ? ids.map((projectId) => (
+                  <ProjectCard key={projectId} projectId={projectId} />
+                ))
+              : <p>No project to display</p>
+      }
       </div>
     );
-  }
+  } 
 
   return (
     <div className="w-11/12 sm:w-4/5 mx-auto grid grid-cols-1 justify-items-center items-center py-7">

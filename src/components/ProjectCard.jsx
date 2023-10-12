@@ -1,8 +1,14 @@
 import React from "react";
 import { AiFillGithub } from "react-icons/ai";
+import { useGetProjectsQuery } from "../features/projectApiSlice";
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ projectId }) => {
 
+  const {project} = useGetProjectsQuery('projectsList', {
+    selectFromResult: ({data}) => ({
+      project: data?.entities[projectId]
+    })
+  })
   return (
     <section className="w-[20rem] sm:w-[30rem] rounded-xl p-2 my-5 bg-white/10 backdrop-blur-xl shadow-xl">
         <div className="w-full h-[9.5rem] overflow-hidden rounded-xl">
