@@ -3,8 +3,8 @@ import { setCredentials, logOut } from '../../features/auth/authSlice'
 
 
 const baseQuery = fetchBaseQuery({
-    // baseUrl: 'https://sito-api.onrender.com',
-    baseUrl: 'http://localhost:3600',
+    baseUrl: 'https://sito-api.onrender.com',
+    // baseUrl: 'http://localhost:3600',
     credentials: 'include',
     prepareHeaders: (headers, {getState}) => {
         const token = getState().auth.token
